@@ -1,18 +1,18 @@
 <template>
-  <div id="app" class="dark">
+  <div id="app" class="dark h-screen w-screen">
     <Clock></Clock>
   </div>
 </template>
 
 <script>
-import Clock from './components/Clock'
+import Clock from "./components/Clock";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Clock
   }
-}
+};
 </script>
 
 <style>
@@ -25,7 +25,7 @@ export default {
   margin-top: 60px;
 }
 .dark {
-        color: white !important;
-        background-color: #2c3e50;
-    }
+  color: white !important;
+  background-color: #2c3e50;
+}
 </style>
