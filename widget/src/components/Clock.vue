@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>{{ dText }}</h1>
+        <p class="time">{{ dText }}</p>
     </div>
 </template>
 
@@ -8,7 +8,7 @@
 import moment from 'moment'
 
 export default {
-    name: 'Watch',
+    name: 'Clock',
     props: {
         pType: String
     },
@@ -24,3 +24,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    .time {
+        font-size: 160px;
+    }
+</style>

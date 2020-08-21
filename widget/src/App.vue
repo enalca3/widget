@@ -1,17 +1,16 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Watch></Watch>
+  <div id="app" class="dark">
+    <Clock></Clock>
   </div>
 </template>
 
 <script>
-import Watch from './components/watch'
+import Clock from './components/Clock'
 
 export default {
   name: 'App',
   components: {
-    Watch
+    Clock
   }
 }
 </script>
@@ -25,4 +24,8 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+.dark {
+        color: white !important;
+        background-color: #2c3e50;
+    }
 </style>
