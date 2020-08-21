@@ -1,6 +1,8 @@
 <template>
   <div>
-    <p :style="dStyleObject">{{ dText }}</p>
+    <p :style="dStyleObject">
+      {{ dText }}
+    </p>
   </div>
 </template>
 

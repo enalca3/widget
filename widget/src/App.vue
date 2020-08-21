@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="dark h-screen w-screen">
+  <div id="app" :style="dStyles">
     <Clock></Clock>
   </div>
 </template>
@@ -11,6 +11,22 @@ export default {
   name: "App",
   components: {
     Clock
+  },
+  data() {
+    return {
+      dStyles: [],
+      dStyleObject: {
+        color: "#2c3e50",
+        backgroundColor: "white"
+      },
+      dDarkStyleObject: {
+        color: "white !important",
+        backgroundColor: "#2c3e50"
+      }
+    };
+  },
+  created() {
+    this.dStyles.push(this.dDarkStyleObject);
   }
 };
 </script>
@@ -23,9 +39,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-.dark {
-  color: white !important;
-  background-color: #2c3e50;
 }
 </style>
