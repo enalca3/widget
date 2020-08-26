@@ -1,6 +1,9 @@
 <template>
-  <div id="app" :style="dStyles">
-    <Clock></Clock>
+  <div
+    id="app"
+    :style="dStyles"
+  >
+    <Clock />
   </div>
 </template>
 
@@ -26,7 +29,7 @@ export default {
     };
   },
   created() {
-    this.dStyles.push(this.dDarkStyleObject);
+    this.dStyles.push(this.dStyleObject)
   }
 };
 </script>
